@@ -1,0 +1,2 @@
+use stegsolver to show only gray bits
+dctf{N0w_Y0u_s3e_m3}

@@ -1,0 +1,5 @@
+Julius = rot substition cipher
+rot14 ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789
+input into caeser decoder
+
+flag: dcTf{Th3_d13_h4S_b33N_c4ST}

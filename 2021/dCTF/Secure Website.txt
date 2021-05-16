@@ -1,0 +1,4 @@
+Website uses Tiger 128,4 hashing
+username: admin
+password hash: 0e132798983807237937411964085731
+

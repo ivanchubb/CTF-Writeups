@@ -1,0 +1,6 @@
+burpsuite the page
+
+change auth and flag to 1
+submit
+
+flag = dctf{w3b_c4n_b3_fun_r1ght?}
