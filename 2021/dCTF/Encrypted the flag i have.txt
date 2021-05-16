@@ -1,2 +1,4 @@
-1 for 1 substitution cipher with starwars language
+The grammar reminds me of yoda
+Google starwars language
+do a 1 for 1 substitution cipher with starwars language
 Flag: DCTF(MASTERCODEBREAKER)
