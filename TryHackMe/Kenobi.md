@@ -248,7 +248,7 @@ PORT    STATE SERVICE
 |_  /var *
 </pre>
 What mount can we see?: /var
---- 
+
 ## Gain initial access with ProFTPd
 
 1. Use Netcat to connect to the machine on the FTP port
