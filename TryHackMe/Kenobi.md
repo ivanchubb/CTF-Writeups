@@ -2,7 +2,7 @@
 https://tryhackme.com/room/kenobi
 
 ---
-## Iniitial Enumeration
+## Initial Enumeration
 **IP Address:** 10.10.87.210
 ### gobuster
 `gobuster dir -u 10.10.87.210 -w /usr/share/wordlists/dirb/common.txt -x .php,.xml,.html`
