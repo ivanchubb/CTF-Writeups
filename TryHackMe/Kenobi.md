@@ -153,7 +153,7 @@ Host script results:
 
 </pre>
 Number of open ports = 11 (but THM has it as 7? need to investigate later)
---- 
+
 ## Samba Enumeration
 1. Run the script in the instructions:
 `nmap -p 445 -script=smb-enum-shares.nse,smb-enum-users.nse 10.10.87.210`
@@ -294,7 +294,7 @@ we are logged in as Kenobi!
 5. What is Kenobi's user flag?:
 `cat user.txt`
 XXXXXXX**REDACTED**XXXXXXXXX
---- 
+
 ## Priv Esc with Path Variable Manipulation
 1. lets find all the files with SUID bits
 `find / -perm /4000 2>&1 | grep -v "Permission denied"`
