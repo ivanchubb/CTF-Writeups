@@ -3,7 +3,7 @@ Question:
 Can you get the flag from the given file.
 </pre>
 
-files: keygen.py
+files: [keygen.py](keygen.py)
 
 read file in notepad:
 <pre>
@@ -42,4 +42,6 @@ else:
 looks like it takes the password as an array and then checks all the indices for their values.
 
 1) starting from password[6] and working our way to password[27] we get:
+
+
 **flag: SHELL{s3nb0nzakur4_k4g3y05h1}**
