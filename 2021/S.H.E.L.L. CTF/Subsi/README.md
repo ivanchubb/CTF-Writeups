@@ -3,7 +3,7 @@ question:
 <pre>
 HITSS{5X65Z1ZXZ10F_E1LI3J}
 </pre>
-files: script.py
+files: [script.py](script(4).py)
 - based on the name we can assume it's a substitution cipher
 
 looking at the script we get:
