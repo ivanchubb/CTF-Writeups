@@ -12,4 +12,4 @@ files: asm_code.txt
 5) **Flag: SHELL{0x117}**
 
 note: i am awful at assembly and actually had to draw this out. see below for my sloppy work.
-[image](sloppy.png)
+![image](sloppy.png)
