@@ -1,5 +1,6 @@
 Question: Flag Format : shellctf{}
-files: script.py, values.json
+files: [script.py](script.py), [values.json](values.json)
+
 1) from values.json
 <pre>e = 65537
 n = 105340920728399121621249827556031721254229602066119262228636988097856120194803
