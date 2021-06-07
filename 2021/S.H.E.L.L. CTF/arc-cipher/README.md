@@ -1,7 +1,7 @@
 Question:
 
 cipher\_text : a7 f9 de 54 29 92 7f 61 9a 7a 5f f3 f4 1a 88 a1 8f ca 97 47
-files: script.py
+files: [script.py](script(4).py)
 
 1) looking at script.py we are luckily given the key "MANGEKYOU"
 2) the program creates a new key by converting the current one to hex and does some encryption using a XOR. with this information we can solve it.
