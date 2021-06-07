@@ -1,7 +1,7 @@
 
 question:
 <pre>
-HITSS{5X65Z1ZXZ10F\_E1LI3J}
+HITSS{5X65Z1ZXZ10F_E1LI3J}
 </pre>
 files: script.py
 - based on the name we can assume it's a substitution cipher
