@@ -7,7 +7,7 @@ All we ask from you is Time and Date of Attack SHELL{HH:MM;DD/MM/YYYY}
 
 Update:- Time in IST time zone.
 1) the repo is owned by a person named "norias-teind"
-1) there was a commit to README.md where the owner moves [https://realantwohnette.wordpress.com](https://realantwohnette.wordpress.com) to another location
+1) there was a [commit to README.md](https://github.com/norias-teind/tools/commit/2fff2c9c8ea3fa266f7239e4202a841ed6eadf98) where the owner moves [https://realantwohnette.wordpress.com](https://realantwohnette.wordpress.com) to another location
 2) going there takes us to a site listed as "NeridaTsion Diary". This is an anagram for norias-teind. and to drive the point home, there is an article on anagrams on the page too
 3) at the bottom is a link to a twitter feed by "@DarienStoni"
 4) Browsing through the tweets is a cryptic threat saying "Next year. This time. Remember me" timestamped at 05:06 30 May 2021.
