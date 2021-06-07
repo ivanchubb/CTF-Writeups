@@ -13,4 +13,4 @@ Note : flag is not in SHELL{} format, just a positive number.
 4) 2nd one is Japanese Industrial Standard symbol U+3004
 5) 3rd one is Geta Mark U+3013
 6) 3036+3004+3013 = 9053
-**flag: 9053**
+7) **flag: 9053**
