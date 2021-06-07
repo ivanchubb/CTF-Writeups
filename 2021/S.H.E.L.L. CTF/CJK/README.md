@@ -3,6 +3,7 @@ There is a locker protected with a pin.
 
 Can you help me out in finding the pin in the image, and there is some labeling side of it.  
 [https://drive.google.com/file/d/12xHqvBOv5P6S2zjn9oWNTlOMPkgT\_aal/view?usp=sharing](https://drive.google.com/file/d/12xHqvBOv5P6S2zjn9oWNTlOMPkgT_aal/view?usp=sharing) (link for downloading the image.)
+![pin(2).png](pin(2).png)
 
 Note : flag is not in SHELL{} format, just a positive number.
 - file has 3 symbols seperated by "+", since the question specifies the answer is a positive number, assume the plus symbols means add them.
