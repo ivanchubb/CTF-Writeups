@@ -3,7 +3,7 @@ question:
 Raj wanted to send a huge chunk of data. FInd it
 Note : Enclose the flag in 'SHELL{' & '}'.
 </pre>
-files: COLD_COMPRESS.jpg
+files: [COLD_COMPRESS.jpg](COLD_COMPRESS.jpg)
 
 1) based on the name i'm immediately thinking a compressed file is inside
 2) `binwalk -e COLD_COMPRESS.jpg`
