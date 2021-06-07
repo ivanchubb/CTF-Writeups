@@ -1,5 +1,5 @@
 
-<pre>ciphered text : HESL{LRAT5PN51010T\_CNPH1R}3
+<pre>ciphered text : HESL{LRAT5PN51010T_CNPH1R}3
 
 Try decrypting:
 </pre>
@@ -42,7 +42,7 @@ print(ciphered_txt)
     li.append(li1[i])
 ```
 and
-`text = HESL{LRAT5PN51010T\_CNPH1R}3`
+`text = HESL{LRAT5PN51010T_CNPH1R}3`
 3) run script.py
 <pre>
 The ciphered text is :
