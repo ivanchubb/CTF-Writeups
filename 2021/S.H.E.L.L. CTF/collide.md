@@ -39,4 +39,6 @@ page displays:
 4) googling around i saw a [workaround on stack overflow](https://stackoverflow.com/questions/53080807/sha256-hash-collisions-between-two-strings/53081240)
 5) basically assign the values of shell and pwn as arrays to break the hashing algorithm
 6) http://3.142.122.1:9335/index.php?shell[0]=0&pwn[1]=0
+
+
 **flag: SHELL{1nj3ct\_&\_coll1d3\_9d25f1cfdeb38a404b6e8584bec7a319}**
