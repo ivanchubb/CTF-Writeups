@@ -4,7 +4,7 @@ Question:
 Try decrypting:
 </pre>
 
-files: script.py
+files: [script.py](script.py)
 <pre>
 text = 'flag{...}'
 
