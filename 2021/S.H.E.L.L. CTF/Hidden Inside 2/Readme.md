@@ -7,7 +7,9 @@ files: HIDDEN_INSIDE_2.jpg
 
 1) similiar to the last one, i noticed that even though it has a .jpg extension, it has a .PNG magic number 
 `xxd HIDDEN_INSIDE_2.jpg | more`
-[header](header.jpg)
+
+![header](header.png)
+
 2) changing it to a png `mv HIDDEN_INSIDE_2.jpg hidden2.png`
 3) did some more [research on steganography in PNGs](https://shanereilly.net/posts/basic_steganography_and_png_files/) and remembered zsteg
 4) `zsteg hidden2.png` 
@@ -35,5 +37,9 @@ b4,rgba,lsb,xy      .. text: "4o$o5o4oT"
 	3) PGP Secret sub-key?
 6) Extract the hidden image `zsteg -E b1,g,lsb,xy hidden2.png > new.png`
 7) open it up
-[flag](flag.jpg)
+
+
+![flag](flag.png)
+
+
 **flag: SHELL{RayMONd_redDINTON_isNOt_iLLYA}**
