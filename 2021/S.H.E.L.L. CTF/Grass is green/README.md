@@ -4,7 +4,7 @@ Grass can be green but it can be brown as well. so lions can hide in between the
 Note : Wrap the flag in 'SHELL{' & '}'
 </pre>
 
-files: grass_is_green.jpg
+files: [grass_is_green.jpg](grass_is_green.jpg)
 
 1) opening the file it looks like our familiar dark elf
 2) based on the wording i'm assuming this has to do with the green color filter
