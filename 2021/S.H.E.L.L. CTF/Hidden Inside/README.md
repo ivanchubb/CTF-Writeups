@@ -3,7 +3,7 @@ question:
 Raj wanted to send a msg to Brad but he wanted to hide it from his wife? Can you help Brad decode it?
 Note : Wrap the flag in 'SHELL{' & '}'.
 </pre>
-files: mystic-fairy-girl-magical-dark-sgi-3840x2558-5287.jpg
+files: [mystic-fairy-girl-magical-dark-sgi-3840x2558-5287.jpg](HIDDEN_INSIDE.jpeg)
 
 1) i noticed that the format is in .jpg but the file is a .png, but that didn't change anything.  tried running strings, xxd, and exiftool to look for some obvious answers, but didn't get anywhere
 2) popped it into [stegsolve](https://github.com/zardus/ctf-tools/blob/master/stegsolve/install) and looked through different filters, but didn't get anywhere there either
