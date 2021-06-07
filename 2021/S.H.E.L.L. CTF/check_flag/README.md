@@ -3,7 +3,7 @@ question:
 <pre>
 Was cleaning the junk out of my PC, when I found this really old executable. Help me look for the flag.
 </pre>
-files: checkflag.exe
+files: [checkflag.exe](checkflag(1).exe)
 
 1) open the file in [ghidra](https://ghidra-sre.org/)
 2) go to function "checkflag"
