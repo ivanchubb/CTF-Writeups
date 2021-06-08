@@ -9,7 +9,7 @@
 5) Web Security
 
 ### Performance
-SHELL was advertised as a beginner CTF and I think it stayed true to that.  It was the first CTF where I actually dedicated a full weekend to in order to capture as much flags as possible.  This was my first CTF competing with a team.  Of that team only two of us got any solves. between the two of us we managed 3544 points and **[placed 23rd of 533 teams](https://ctftime.org/team/155547)**. We managed to complete the entire forensics, web security, and reverse engineering category. The only ones we couldn't solve were 3 cryptography questions and one puzzle question (Cyber Attack 3).The questions i've solved are in this repo, the questions he solved can be found at [Jisoos link here](). 
+SHELL was advertised as a beginner CTF and I think it stayed true to that.  It was the first CTF where I actually dedicated a full weekend to in order to capture as much flags as possible.  This was my first CTF competing with a team.  Of that team only two of us got any solves. between the two of us we managed 3544 points and **[placed 23rd of 533 teams](https://ctftime.org/team/155547)**. We managed to complete the entire forensics, web security, and reverse engineering category. The only ones we couldn't solve were 3 cryptography questions and one puzzle question (Cyber Attack 3).The questions i've solved are in this repo, the questions he solved can be found at [Smoothbrain's repo here](https://github.com/RandomPost/CTF-Writeups). 
 
 ![categories](https://github.com/ivanchubb/CTF-Writeups/blob/main/2021/S.H.E.L.L.%20CTF/Category%20Breakdown.png)
 
