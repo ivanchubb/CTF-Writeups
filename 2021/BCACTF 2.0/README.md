@@ -13,7 +13,7 @@
 | [Zstegosauraus](https://github.com/ivanchubb/CTF-Writeups/tree/main/2021/BCACTF%202.0/foren/Zstegosaurus) | Foren |
 | [Example Problem](https://github.com/ivanchubb/CTF-Writeups/tree/main/2021/BCACTF%202.0/misc/Example%20Problem) | Misc |
 | [I Can Haz Interwebz](https://github.com/ivanchubb/CTF-Writeups/tree/main/2021/BCACTF%202.0/misc/I%20Can%20Haz%20Interwebz) | Misc |
-| [Obligatory Discord](https://github.com/ivanchubb/CTF-Writeups/tree/main/2021/BCACTF%202.0/misc/Obligatory%20Discord%20Problem) Problem | Misc |
+| [Obligatory Discord Problem](https://github.com/ivanchubb/CTF-Writeups/tree/main/2021/BCACTF%202.0/misc/Obligatory%20Discord%20Problem)  | Misc |
 | [Agent Gerald](https://github.com/ivanchubb/CTF-Writeups/tree/main/2021/BCACTF%202.0/webex/Agent%20Gerald) | Webex |
 | [Countdown Timer](https://github.com/ivanchubb/CTF-Writeups/tree/main/2021/BCACTF%202.0/webex/Countdown%20Timer) | Webex |
 | [Home Automation](https://github.com/ivanchubb/CTF-Writeups/tree/main/2021/BCACTF%202.0/webex/Home%20Automation) | Webex |
