@@ -12,6 +12,6 @@
 ```
 4) the symbols at the bottom translate to "THEKEYISFHSKDN"
 5) analyzing the binary in [cyberchef](https://gchq.github.io/CyberChef/#recipe=From_Binary('Space',8)&input=MDExMDAxMTEwMTEwMTAxMDAxMTEwMDExMDExMDExMDEwMTExMDExMTAxMTEwMDExCjAxMTExMDExMDAxMTAwMDEwMTExMTAwMDAxMDExMTExMDExMDExMTEwMDExMDAwMQowMTEwMTAxMTAxMDExMTExMDExMTEwMDAwMDExMDEwMDAxMTEwMDAwMDExMTAwMTAKMDEwMTExMTEwMTEwMTEwMDAwMTEwMDExMDExMTEwMDEwMDExMDEwMDAxMTAxMDEwCjAxMTAxMTEwMDAxMTExMTEwMTExMTEwMQ) results in "gjsmws{1x_o1k_x4pr_l3y4jn?}"
-6) looks like we have the right special characters and all that is left is a substitution. The only substitution cipher i know is the vigenere
+6) looks like we have the right special characters and all that is left is a substitution. The only French substitution cipher i know is the vigenere
 7) trying a [vigenere decode with key "FHSKDN"](https://gchq.github.io/CyberChef/#recipe=From_Binary('Space',8)Vigen%C3%A8re_Decode('FHSKDN')&input=MDExMDAxMTEwMTEwMTAxMDAxMTEwMDExMDExMDExMDEwMTExMDExMTAxMTEwMDExCjAxMTExMDExMDAxMTAwMDEwMTExMTAwMDAxMDExMTExMDExMDExMTEwMDExMDAwMQowMTEwMTAxMTAxMDExMTExMDExMTEwMDAwMDExMDEwMDAxMTEwMDAwMDExMTAwMTAKMDEwMTExMTEwMTEwMTEwMDAwMTEwMDExMDExMTEwMDEwMDExMDEwMDAxMTAxMDEwCjAxMTAxMTEwMDAxMTExMTEwMTExMTEwMQ) gives us the flag
 8) flag: **bcactf{1s_h1s_n4me_g3r4rd?}**
