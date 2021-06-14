@@ -14,8 +14,11 @@ int purchase(char *item, int cost) {
         printf("That'll cost $%d.\n", cost);
 ```
 you can tell that you enter an amount of something to buy and it's stored as an int. "cost" is then calculated by multiplying the item cost and the amount you ordered.  
+
 4) We can exploit this to force the cost to be a negative number therefore making our "purchase" give us money. Then once we have the money we can buy a flag.
-5) we need to enter an amount that will still be valid, but when multiplied by the cost will go over the 2,147,483,647 threshold to force the sign to flip
+
+5) we need to enter an amount that will still be valid, but when multiplied by the cost will go over the 2,147,483,647 threshold to force the sign to flip.
+
 6) I attempted to buy 2100000000  BCA merch at $20 each
 ```
 You currently have $3.
