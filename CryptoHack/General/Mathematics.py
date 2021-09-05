@@ -42,4 +42,13 @@ gcd,x,y = egcd(26513,32321)
 print("The GCD is", gcd)
 print(f"x = {x}, y = {y}")
 
-print(8146798528947%17)
+#print(8146798528947%17)
+
+print((3**17)%17)
+
+# fermats little theroem is any number a to power x mod x = a (a**x%x=a)
+# any number a to power x mod x+1 = 1
+# a**(p-1)%p=1
+# a**(p-2)%p=a**-1
+print((3**11)%13)
+#
