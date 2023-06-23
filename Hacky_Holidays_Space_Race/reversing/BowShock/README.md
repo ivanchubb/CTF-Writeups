@@ -1,4 +1,4 @@
-![q1](Hacky%20Holidays/reversing/BowShock/question.png)
+![q1](question.png)
 files: [bowshock.jar](BowShock.jar)
 
 1) Running the .jar file gives:

@@ -1,7 +1,7 @@
 ### Part 1
 
 ![question](printer.png)
-Files: [unidentifi3d.gcode](unidentifi3d.gcode)
+Files: unidentifi3d.gcode
 1) Opening the .gcode file in notepad shows some stuff about extruding
 2) Googling the ".gcode" extension shows its information from a 3D printer
 3) At the bottom of the file is the make/model information

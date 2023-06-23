@@ -1,5 +1,7 @@
-### BCA CTF 2.0 Writeups       
+# BCA CTF 2.0
+
 ![pic](Screenshot_3.png)
+
 | Challenge | Category |
 | ----------- | ----------- |
 | [BCA Mart](https://github.com/ivanchubb/CTF-Writeups/tree/main/2021/BCACTF%202.0/binex/BCA%20Mart) | Binex |
